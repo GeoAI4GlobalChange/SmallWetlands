@@ -1,0 +1,13 @@
+For each grid cell in the dataset:
+    If the cell is classified as a non-wetland water body (e.g., river, lake, pond, stream, reservoir):
+        Exclude the cell from further analysis
+    Else:
+        Mark the cell as "wetland"
+
+Use OpenCV's connectedComponentsWithStats to:
+    Group all remaining wetland grid cells into spatially connected patches
+
+For each modeled grid cell:
+    Estimate the extent of wetland patches falling within the grid cell
+    Calculate CH4_emission as:
+        CH4_emission = CH4_flux_intensity × wetland_extent
