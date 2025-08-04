@@ -1,20 +1,26 @@
 # Small wetland CH4 emissions    
-The repository contains codes of identifying small wetlands and upscaling wetland methane emissions at the global scale. Specifically, we used causality guided machine learning models, eddy covariance and chamber measurements of CH4 fluxes, and environmental predictors (including soil temperature, air temperature, gross primary productivity, air pressure, precipitation, wind speed, snow cover, soil water content, soil PH, and soil texture) to  upscale global wetland CH4 emissions from 2003 to 2023. We then identified dominant controls on wetland CH4 emission trends regionally and globally using statistical attribution models.  
+The repository contains codes of identifying small wetlands and estimating wetland methane emissions at the global scale. Specifically, we used the GWL_FCS30 wetland dataset, and used ancillary datasets including HydroLAKES, SWOT PLD, Global River Width from Landsat, and Global Dam Watch Database, to exclude water bodies such as lakes, ponds, rivers, streams, and reservoirs.  
 ## Code introduction
-1)	Causality-guided machine learning models  
-In the ”model_demo.py” file, it contains code to develop causality-guided machine learning models.    
-2) Quantifying dominant controls on wetland CH4 emission trends  
-In the”methane_analysis_demo.py” file, run the “grid_trend_analysis” function.  
+1)	Identifying small wetlands    
+In the ”Identifying_small_wetlands.py” file, it contains code to identify small wetlands and estimate wetland extent.    
+2) Quantifying CH4 emission from small wetlands    
+In the”Estimating_CH4_emissions.py” file, run the “global_wetland_CH4_emissions” function.  
 
 ## Data availability
-The original eddy covariance methane flux datasets are from FLUXNET-CH4 (https://fluxnet.org/data/fluxnet-ch4-community-product/) and AmeriFlux (https://ameriflux.lbl.gov/sites/site-search/). The chamber datasets we compiled will be publicly available along with our paper.  
-For the input drivers, GPP was obtained from the GOSIF dataset, which is available at https://globalecology.unh.edu/data/GOSIF-GPP.html. Other variables (soil temperature, air temperature, air pressure, precipitation, wind speed, snow cover, and soil water content) were obtained from ERA5-land, available at https://cds.climate.copernicus.eu/datasets/derived-era5-land-daily-statistics. The monthly global dataset of water storage/height anomalies is from GRACE-FO (https://doi.org/10.5067/TEMSC-3JC63).  
-For more datasets used for uncertainty analysis, please see the correponding paper.
+The wetland dataset is from GWL_FCS30: https://zenodo.org/records/7340516  
+For the input drivers, GPP was obtained from the GOSIF dataset, which is available at https://globalecology.unh.edu/data/GOSIF-GPP.html.  
+Other variables (soil temperature, air temperature, air pressure, precipitation, wind speed, snow cover, and soil water content) were obtained from ERA5-land datasets,  
+which are available at (https://cds.climate.copernicus.eu/datasets/derived-era5-land-daily-statistics).  
+HydroLAKES: https://www.hydrosheds.org/products/hydrolakes  
+SWOT PLD:  https://hydroweb.next.theia-land.fr/  
+Global River Width from Landsat: https://zenodo.org/records/1297434#.YfGIXf7MLcu  
+Global Dam Watch Database: https://www.globaldamwatch.org/database  
+Please read the corresponding paper for other datasets used for analysis.  
 
 ## Computing environment  
-1) Packages required: netCDF4, pandas, numpy, scipy, pytorch, scikit-learn, pickle  
+1) Packages required: rasterio, opencv-python, netCDF4, pandas, numpy, scipy, pytorch, scikit-learn, pickle, tqdm  
 2) Anaconda is recommended to install all the packages required by runing: Conda install list_of_packages  
 3) The code has been tested on: Windows 11 version 23H2 with Python 3.8.19 and Intel(R)Core(TM)i9-9900K CPU    
 
 ## References
-Details of the research will be seen in our paper (under review now). If you have any questions about the code or dataset, please contact kunxiaojiayuan@lbl.gov or fali2@stanford.edu.
+Details of the research will be seen in our paper (under review now). If you have any questions about the code or dataset, please contact fali2@stanford.edu.
