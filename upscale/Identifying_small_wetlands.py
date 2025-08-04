@@ -254,3 +254,4 @@ if __name__=='__main__':
     output_dir=f'../output/'
     # identify and calculate the area of small wetlands
     identifying_small_wetlands(lats,lons,start_year,end_year,thresholds_list,input_dir,output_dir)
+    # the computational time for the sample data is typically within 1 hour, which may vary depending on the computing platform used. 
