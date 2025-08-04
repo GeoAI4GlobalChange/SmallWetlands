@@ -2,7 +2,7 @@
 The repository contains codes of identifying small wetlands and estimating wetland methane emissions at the global scale. Specifically, we used the GWL_FCS30 wetland dataset, and used ancillary datasets including HydroLAKES, SWOT PLD, Global River Width from Landsat, and Global Dam Watch Database, to exclude water bodies such as lakes, ponds, rivers, streams, and reservoirs.  
 ## Code introduction
 1)	Identifying small wetlands    
-In the ”Identifying_small_wetlands.py” file, it contains code to identify small wetlands and estimate wetland extent.    
+In the ”Identifying_small_wetlands.py” file, it contains code to identify small wetlands and estimate wetland extent.     
 2) Quantifying CH4 emission from small wetlands    
 In the”Estimating_CH4_emissions.py” file, run the “global_wetland_CH4_emissions” function.  
 
@@ -19,7 +19,7 @@ Please read the corresponding paper for other datasets used for analysis.
 
 ## Computing environment  
 1) Packages required: rasterio, opencv-python, netCDF4, pandas, numpy, scipy, pytorch, scikit-learn, pickle, tqdm  
-2) Anaconda is recommended to install all the packages required by runing: Conda install list_of_packages  
+2) Anaconda is recommended to install all the packages required by runing: Conda install list_of_packages. The installation time could typically be within 20 minutes but may vary depending on the internet and Platform used.  
 3) The code has been tested on: Windows 11 version 23H2 with Python 3.8.19 and Intel(R)Core(TM)i9-9900K CPU    
 
 ## References
