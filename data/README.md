@@ -1,4 +1,6 @@
 # Data availability
+The 'sample' folder contains a subset of standardized dataset (0.5 degree, weekly resolution) used for quickly run global upscaling.  
+Links to all original datasets are provided below.  
 The wetland dataset is from GWL_FCS30: https://zenodo.org/records/7340516  
 For the input drivers, GPP was obtained from the GOSIF dataset, which is available at https://globalecology.unh.edu/data/GOSIF-GPP.html.  
 Other variables (soil temperature, air temperature, air pressure, precipitation, wind speed, snow cover, and soil water content) were obtained from ERA5-land datasets,  
