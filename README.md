@@ -1,5 +1,5 @@
 # Small wetland CH4 emissions    
-The repository contains codes of identifying small wetlands and estimating wetland methane emissions at the global scale. Specifically, we used the GWL_FCS30 wetland dataset, and used ancillary datasets including HydroLAKES, SWOT PLD, Global River Width from Landsat, and Global Dam Watch Database, to exclude water bodies such as lakes, ponds, rivers, streams, and reservoirs.  
+The repository contains codes of identifying small wetlands and estimating wetland methane emissions. Specifically, we used the GWL_FCS30 wetland dataset, and used ancillary datasets including HydroLAKES, SWOT PLD, Global River Width from Landsat, and Global Dam Watch Database, to exclude water bodies such as lakes, ponds, rivers, streams, and reservoirs.  
 ## Code introduction
 1)	Identifying small wetlands    
 In the ”Identifying_small_wetlands.py” file, it contains code to identify small wetlands and estimate wetland extent.     
