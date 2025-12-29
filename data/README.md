@@ -1,5 +1,5 @@
 # Data availability
-The 'samples' folder contains demo datasets for quickly running the demo code in the 'upscale' folder, including the wetland dataset, standardized input drivers, and estimated wetland CH₄ fluxes.  
+The 'samples' folder contains demo datasets for running the demo code in the 'upscale' folder, including the wetland dataset, and standardized input drivers.  
 Links to all original datasets are provided below.  
 The wetland dataset is from GWL_FCS30: https://zenodo.org/records/7340516  
 For the input drivers, GPP was obtained from the GOSIF dataset, which is available at https://globalecology.unh.edu/data/GOSIF-GPP.html.  
